@@ -79,20 +79,5 @@ namespace Phones
                 Console.WriteLine("The list with calls history is empty");
             }
         }
-
-
-
-        static T FindMinimumOfGivenSet<T>(params T[] numbers)
-        {
-            dynamic minNumber = numbers[0];
-            for (int i = 0; i < numbers.Length; i++)
-            {
-                if (numbers[i] < minNumber)
-                {
-                    minNumber = numbers[i];
-                }
-            }
-            return minNumber;
-        }
     }
 }
